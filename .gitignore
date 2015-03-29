@@ -1,3 +1,4 @@
 /eagle.epf
+*.pro
 *.s#?
 *.b#?
