@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -111,69 +111,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="chrisy-components">
-<packages>
-<package name="DIL3-TOGGLE-SWITCH">
-<description>https://www.adafruit.com/product/1684</description>
-<pad name="NO" x="-2.54" y="-3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="COM" x="0" y="-3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="NC" x="2.54" y="-3.81" drill="0.8" shape="long" rot="R90"/>
-<wire x1="-3.175" y1="-3.175" x2="3.175" y2="-3.175" width="0.127" layer="21"/>
-<wire x1="3.175" y1="-3.175" x2="3.175" y2="3.175" width="0.127" layer="21"/>
-<wire x1="3.175" y1="3.175" x2="-3.175" y2="3.175" width="0.127" layer="21"/>
-<wire x1="-3.175" y1="3.175" x2="-3.175" y2="-3.175" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
-<text x="-3.302" y="-3.175" size="1.27" layer="21" rot="R90">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="DIL3-TOGGLE-SWITCH">
-<description>https://www.adafruit.com/product/1684</description>
-<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="0" y2="2.159" width="0.254" layer="94"/>
-<wire x1="-0.254" y1="2.54" x2="0.254" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0.254" y1="2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-0.254" y1="-2.54" x2="0.254" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0.254" y1="-2.54" x2="3.81" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-0.254" y1="2.54" x2="0" y2="2.286" width="0.254" layer="94"/>
-<wire x1="0" y1="2.286" x2="0.254" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-0.254" y1="-2.54" x2="0" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.286" x2="0.254" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="3.81" x2="-3.81" y2="0" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="0" x2="-3.81" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="-3.81" x2="3.81" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-3.81" x2="3.81" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
-<wire x1="3.81" y1="2.54" x2="3.81" y2="3.81" width="0.254" layer="94"/>
-<wire x1="3.81" y1="3.81" x2="-3.81" y2="3.81" width="0.254" layer="94"/>
-<pin name="COMMON" x="-7.62" y="0" visible="off" length="middle"/>
-<pin name="NC" x="7.62" y="2.54" visible="off" length="middle" rot="R180"/>
-<pin name="NO" x="7.62" y="-2.54" visible="off" length="middle" rot="R180"/>
-<text x="-3.556" y="4.064" size="1.27" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-5.334" size="1.27" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DIL3-TOGGLE-SWITCH">
-<description>https://www.adafruit.com/product/1684</description>
-<gates>
-<gate name="G$1" symbol="DIL3-TOGGLE-SWITCH" x="0" y="0"/>
-</gates>
-<devices>
-<device name="DIL3" package="DIL3-TOGGLE-SWITCH">
-<connects>
-<connect gate="G$1" pin="COMMON" pad="COM"/>
-<connect gate="G$1" pin="NC" pad="NC"/>
-<connect gate="G$1" pin="NO" pad="NO"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -184,14 +121,12 @@
 </class>
 </classes>
 <parts>
-<part name="SW1" library="chrisy-components" deviceset="DIL3-TOGGLE-SWITCH" device="DIL3"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="SW1" gate="G$1" x="30.48" y="30.48"/>
 </instances>
 <busses>
 </busses>
