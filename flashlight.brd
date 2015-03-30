@@ -62,26 +62,32 @@
 </layers>
 <board>
 <plain>
-<circle x="16.51" y="16.51" radius="16.51" width="0.040640625" layer="20"/>
-<circle x="16.51" y="16.51" radius="14.5542" width="3.937" layer="16"/>
-<circle x="16.51" y="16.51" radius="5.08" width="11.43" layer="30"/>
+<circle x="16.51" y="16.51" radius="1.27" width="11.43" layer="30"/>
 <text x="16.51" y="20.32" size="1.778" layer="25" align="bottom-center">Stockton
 Flashlight</text>
-<circle x="16.51" y="16.51" radius="14.7574" width="3.556" layer="30"/>
-<circle x="16.51" y="16.51" radius="5.08" width="12.7" layer="16"/>
-<rectangle x1="6.35" y1="19.685" x2="26.67" y2="25.4" layer="1"/>
-<rectangle x1="6.35" y1="7.62" x2="26.67" y2="13.335" layer="1"/>
-<text x="16.51" y="3.81" size="1.778" layer="1" align="bottom-center">Rev. 1.1</text>
-<text x="16.51" y="3.81" size="1.778" layer="25" align="bottom-center">Top Board
-
-Rev. 1.1</text>
+<circle x="16.51" y="16.51" radius="0.762" width="12.7" layer="16"/>
+<rectangle x1="6.35" y1="19.685" x2="26.67" y2="22.86" layer="1"/>
+<rectangle x1="6.35" y1="10.16" x2="26.67" y2="13.335" layer="1"/>
+<text x="16.51" y="9.398" size="1.778" layer="25" align="bottom-center">Top Board
+Rev. 2.0</text>
 <rectangle x1="16" y1="13.2" x2="17" y2="19.7" layer="1"/>
 <text x="19.2" y="14.6" size="1.778" layer="25">+</text>
 <rectangle x1="0" y1="15.24" x2="1.778" y2="17.78" layer="1"/>
 <rectangle x1="0" y1="15.24" x2="1.27" y2="17.78" layer="29"/>
 <rectangle x1="31.242" y1="15.24" x2="33.02" y2="17.78" layer="1"/>
 <rectangle x1="31.75" y1="15.24" x2="33.02" y2="17.78" layer="29"/>
-<circle x="16.51" y="16.51" radius="14.810615625" width="1.6256" layer="1"/>
+<wire x1="2.54" y1="25.4" x2="2.54" y2="7.62" width="0.0508" layer="20" curve="64.94"/>
+<wire x1="30.48" y1="25.4" x2="30.48" y2="7.62" width="0.0508" layer="20" curve="-65.94"/>
+<wire x1="2.54" y1="25.4" x2="30.48" y2="25.4" width="0.0508" layer="20"/>
+<wire x1="2.54" y1="7.62" x2="30.48" y2="7.62" width="0.0508" layer="20"/>
+<rectangle x1="4.064" y1="7.62" x2="29.21" y2="8.89" layer="1"/>
+<rectangle x1="4.318" y1="24.13" x2="28.702" y2="25.4" layer="1"/>
+<rectangle x1="4.318" y1="24.13" x2="28.702" y2="25.654" layer="16"/>
+<rectangle x1="4.318" y1="7.366" x2="28.702" y2="8.89" layer="16"/>
+<wire x1="4.572" y1="25.4" x2="4.572" y2="7.62" width="3.556" layer="30" curve="73.34"/>
+<wire x1="28.448" y1="25.4" x2="28.448" y2="7.62" width="3.556" layer="30" curve="-73.34"/>
+<rectangle x1="4.318" y1="7.366" x2="28.956" y2="8.89" layer="30"/>
+<rectangle x1="4.318" y1="24.13" x2="28.448" y2="25.654" layer="30"/>
 </plain>
 <libraries>
 <library name="led">
@@ -1412,7 +1418,10 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="R1" library="resistor" package="R2010" value="" x="8.89" y="16.51" rot="R180"/>
+<element name="R1" library="resistor" package="R2010" value="" x="8.89" y="16.51" smashed="yes" rot="R180">
+<attribute name="NAME" x="10.541" y="19.685" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="11.049" y="19.431" size="1.27" layer="27" rot="R180"/>
+</element>
 <element name="LED1" library="led" package="ML-E" value="ML-E" x="16.5" y="16.5"/>
 </elements>
 <signals>
@@ -1422,10 +1431,6 @@ design rules under a new name.</description>
 <wire x1="3.302" y1="16.51" x2="1.905" y2="16.51" width="1.6256" layer="1"/>
 <via x="3.302" y="16.51" extent="1-16" drill="0.6"/>
 </signal>
-<signal name="N$2">
-<via x="26.67" y="16.51" extent="1-16" drill="0.6"/>
-<wire x1="26.67" y1="16.51" x2="18.542" y2="16.51" width="1.6256" layer="1"/>
-</signal>
 <signal name="N$3">
 <contactref element="R1" pad="1"/>
 <contactref element="LED1" pad="C@1"/>
@@ -1434,24 +1439,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$4">
 <via x="31.115" y="16.51" extent="1-16" drill="0.6"/>
-</signal>
-<signal name="N$5">
-<via x="16.51" y="31.75" extent="1-16" drill="0.6"/>
-</signal>
-<signal name="N$6">
-<via x="16.51" y="1.27" extent="1-16" drill="0.6"/>
-</signal>
-<signal name="N$7">
-<via x="5.08" y="26.67" extent="1-16" drill="0.6"/>
-</signal>
-<signal name="N$8">
-<via x="27.94" y="26.67" extent="1-16" drill="0.6"/>
-</signal>
-<signal name="N$9">
-<via x="27.94" y="6.35" extent="1-16" drill="0.6"/>
-</signal>
-<signal name="N$10">
-<via x="5.08" y="6.35" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="N$11">
 <wire x1="15.24" y1="20.32" x2="16.51" y2="19.05" width="0.4064" layer="1"/>
@@ -1466,6 +1453,9 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$14">
 <via x="21.59" y="16.51" extent="1-16" drill="0.6"/>
+<via x="26.67" y="16.51" extent="1-16" drill="0.6"/>
+<wire x1="26.67" y1="16.51" x2="18.542" y2="16.51" width="1.6256" layer="1"/>
+<wire x1="26.67" y1="16.51" x2="21.59" y2="16.51" width="2.54" layer="16"/>
 </signal>
 <signal name="N$15">
 <wire x1="2.032" y1="14.478" x2="2.032" y2="14.986" width="0.4064" layer="1"/>
@@ -1484,6 +1474,61 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$19">
 <wire x1="32.512" y1="15.494" x2="31.75" y2="14.732" width="0.4064" layer="1"/>
+</signal>
+<signal name="N$5">
+<wire x1="4.572" y1="25.4" x2="4.572" y2="7.62" width="1.524" layer="1" curve="73.34"/>
+<wire x1="28.448" y1="25.4" x2="28.448" y2="7.62" width="1.524" layer="1" curve="-73.34"/>
+<wire x1="4.572" y1="25.4" x2="4.572" y2="7.62" width="1.524" layer="1" curve="73.34"/>
+<wire x1="4.572" y1="25.4" x2="4.572" y2="7.62" width="1.524" layer="1" curve="73.34"/>
+<wire x1="28.448" y1="7.62" x2="28.448" y2="25.4" width="3.556" layer="16" curve="73.34"/>
+<wire x1="4.572" y1="25.4" x2="4.572" y2="7.62" width="3.556" layer="16" curve="73.34"/>
+<wire x1="28.448" y1="7.62" x2="28.448" y2="7.62" width="0" layer="19" extent="1-16"/>
+<wire x1="4.572" y1="25.4" x2="28.448" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.508" y1="25.4" x2="4.572" y2="25.4" width="0" layer="19" extent="1-16"/>
+<wire x1="4.572" y1="25.4" x2="-0.508" y2="25.4" width="0" layer="19" extent="16-16"/>
+<wire x1="-10.668" y1="25.4" x2="4.572" y2="25.4" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$2">
+<via x="2.54" y="20.32" extent="1-16" drill="0.6"/>
+</signal>
+<signal name="N$6">
+<via x="4.318" y="24.13" extent="1-16" drill="0.6"/>
+</signal>
+<signal name="N$7">
+<via x="2.54" y="12.7" extent="1-16" drill="0.6"/>
+</signal>
+<signal name="N$8">
+<via x="4.318" y="8.89" extent="1-16" drill="0.6"/>
+</signal>
+<signal name="N$9">
+<via x="30.48" y="12.7" extent="1-16" drill="0.6"/>
+</signal>
+<signal name="N$10">
+<via x="30.48" y="20.32" extent="1-16" drill="0.6"/>
+</signal>
+<signal name="N$20">
+<via x="28.702" y="24.13" extent="1-16" drill="0.6"/>
+</signal>
+<signal name="N$21">
+<via x="28.702" y="8.89" extent="1-16" drill="0.6"/>
+</signal>
+<signal name="N$22">
+<via x="16.51" y="25.4" extent="1-16" drill="0.6"/>
+</signal>
+<signal name="N$23">
+<via x="16.51" y="7.62" extent="1-16" drill="0.6"/>
+</signal>
+<signal name="N$24">
+<via x="10.16" y="7.62" extent="1-16" drill="0.6"/>
+</signal>
+<signal name="N$25">
+<via x="22.86" y="7.62" extent="1-16" drill="0.6"/>
+</signal>
+<signal name="N$26">
+<via x="10.16" y="25.4" extent="1-16" drill="0.6"/>
+</signal>
+<signal name="N$27">
+<via x="22.86" y="25.4" extent="1-16" drill="0.6"/>
 </signal>
 </signals>
 </board>
