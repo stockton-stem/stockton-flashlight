@@ -111,9 +111,9 @@
 </layers>
 <board>
 <plain>
-<text x="16.51" y="13.208" size="1.778" layer="29" align="bottom-center">Stockton
+<text x="16.51" y="13.208" size="1.778" layer="29" ratio="15" align="bottom-center">Stockton
 Flashlight</text>
-<text x="16.51" y="0.508" size="1.778" layer="29" align="bottom-center">Bottom Board
+<text x="16.51" y="0.508" size="1.778" layer="29" ratio="15" align="bottom-center">Bottom Board
 Rev. 3.1</text>
 <wire x1="16.51" y1="8.89" x2="8.89" y2="16.51" width="1.016" layer="30"/>
 <wire x1="16.51" y1="8.89" x2="5.08" y2="8.89" width="1.524" layer="30"/>
