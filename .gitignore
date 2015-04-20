@@ -2,4 +2,5 @@ eagle.epf
 *.pro
 *.s#?
 *.b#?
+*.job
 ~$*.xlsx

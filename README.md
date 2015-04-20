@@ -21,6 +21,10 @@ This project is intended to introduce some basic concepts from electronic and
 mechanical design. There is a small amount of soldering and a small amount of
 assembly the result of which is a working and powerful flashlight.
 
+The latest version of this documentation and of the Flashlight project is
+available at https://github.com/stockton-flashlight/flashlight or
+https://git.flirble.org/flashlight/flashlight .
+
 The design is not without flaws however, and deliberately so. As you build the
 flashlight you should pay attention to the steps and ask yourself how you
 might improve it.
