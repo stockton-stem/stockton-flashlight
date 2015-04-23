@@ -1,18 +1,20 @@
 Stockton Flashlight Change List
 ===============================
 
+
 License
 =======
 
-Flashlight design, text and pictures are all © 2015 Chris Luke.
+Flashlight design © 2015 Chris Luke.
+Flashlight documentation © 2015 Chris Luke.
 
 This project is licensed with the CERN Open Hardware Licence v1.2.
 
-You may redistribute and modify this documentation under the terms of the CERN
-OHL v.1.2. (http://ohwr.org/cernohl). This documentation is distributed
-WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY,
-SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN
-OHL v.1.2 for applicable Conditions.
+You may redistribute and modify this project under the terms of the CERN OHL
+v.1.2. (http://ohwr.org/cernohl). This project is distributed WITHOUT ANY
+EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY
+QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN OHL v.1.2
+for applicable Conditions.
 
 
 Revision History
