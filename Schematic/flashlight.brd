@@ -62,10 +62,10 @@
 </layers>
 <board>
 <plain>
-<circle x="16.51" y="8.89" radius="1.27" width="11.43" layer="30"/>
+<circle x="16.51" y="8.89" radius="3.556" width="7.112" layer="30"/>
 <text x="16.51" y="11.684" size="1.778" layer="29" ratio="15" align="bottom-center">Stockton
 Flashlight</text>
-<circle x="16.51" y="8.89" radius="0.762" width="12.7" layer="16"/>
+<circle x="16.51" y="8.89" radius="3.556" width="7.112" layer="16"/>
 <rectangle x1="6.35" y1="11.43" x2="26.67" y2="16.256" layer="1"/>
 <rectangle x1="6.35" y1="1.651" x2="26.67" y2="6.35" layer="1"/>
 <text x="16.51" y="1.778" size="1.778" layer="29" ratio="15" align="bottom-center">Top Board
