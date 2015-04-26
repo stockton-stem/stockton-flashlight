@@ -20,7 +20,7 @@ for applicable Conditions.
 Introduction
 ============
 
-This project is intended to introduce some basic concepts from electronic and
+This project is intended to introduce some basic concepts of electronic and
 mechanical design. There is a small amount of soldering and a small amount of
 assembly. The result of this is a working and powerful flashlight.
 
