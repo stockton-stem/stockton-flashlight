@@ -20,6 +20,13 @@ for applicable Conditions.
 Revision History
 ================
 
+Revision 3.3
+------------
+
+* Add a protection diode to Vdd of the regulator.
+* Move the switch solder points out slightly to make them easier to reach.
+
+
 Revision 3.2
 ------------
 
