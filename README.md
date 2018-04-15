@@ -25,8 +25,7 @@ mechanical design. There is a small amount of soldering and a small amount of
 assembly. The result of this is a working and powerful flashlight.
 
 The latest version of this documentation and of the Flashlight project is
-available at https://github.com/stockton-flashlight/flashlight or
-https://git.flirble.org/flashlight/flashlight .
+available at https://github.com/stockton-stem/stockton-flashlight .
 
 The design is not without flaws however, and deliberately so. As you build the
 flashlight you should pay attention to the steps and ask yourself how you
